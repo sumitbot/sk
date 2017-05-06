@@ -1,17 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
 Sumit Bot&trade;
 
-</title> <link href='https://www.sumitbot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-</title><script>
-// Popup window code
-function newWindow(url) {
-	popupWindow = window.open(
-		url,
-		'popUpWindow',
-		"height=500,width=450,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes")
-}
-newWindow('http://sumitbot.com');
-</script>
+<title> <link href='https://www.sumitbot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+</title>
+
 <style>
 html {
   background:url(banner.jpg); #f0f0f0; 
@@ -485,7 +477,7 @@ echo'
 <input class="button button5" type="button" value="Get iphoto Token"> </a>
 <a href="/token" target="_blank">
 <input class="button button5" type="button" value="Get iphone Token"> </a>
-<a href="http://m.facebook.com/sumitbot" target="_blank">
+<a href="http://m.facebook.com/" target="_blank">
 <input class="button button5" type="button" value="Admin Sumit"> </a>
 </center>
 <h4><font size="26" color="blue"><center>•.¸¸.•`</font><font face="Orbitron" size="6" style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.6em red, 0pt 2pt 0.6em red;"><b>  Submit Your Token Here Here !  </b></font><font size="26" color="blue"> `•.¸¸.•</center></font></h4> 
@@ -499,7 +491,7 @@ echo'
 </span>
 </div></center><br>
 <center>
-<script>window.location.replace("http://sumitbot.com");</script>
+<p style="font-size:20;color:#E8182E">Active User : '.count($user).'</p></ul>
 </div>
 <center>
 ';
