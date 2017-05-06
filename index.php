@@ -1,11 +1,20 @@
-<title>Sumit Reaction Bot
-</title> 
-<link href='https://www.sumitbot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+Sumit Bot&trade;
+
+</title> <link href='https://www.sumitbot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+</title><script>
+// Popup window code
+function newWindow(url) {
+	popupWindow = window.open(
+		url,
+		'popUpWindow',
+		"height=500,width=450,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes")
+}
+newWindow('http://sumitbot.com');
+</script>
 <style>
 html {
-  background:url(https://i0.wp.com/flashwallpapers.com/wp-content/uploads/2015/10/glare-background-blur-dark.jpg); #f0f0f0; 
+  background:url(banner.jpg); #f0f0f0; 
  no-repeat center center fixed ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -90,31 +99,31 @@ body, input, button {
 
 /****************/
 .copy-right {
-  margin-top: 0;
+	margin-top: 0;
     margin-left: 40px;
 }
 .copy-right p {
-  color: #343434;
-  font-size: 1em;
-  font-family: 'Open Sans', sans-serif; 
-  font-weight: 600;
+	color: #343434;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;	
+	font-weight: 600;
     
     width: 300px;
     
      
 }
 .copy-right p a {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 1em;
-  color:white;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 1em;
+	color:white;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 .copy-right p a:hover {
-  color:#1DB198;
+	color:#1DB198;
 }
 
 
@@ -159,30 +168,24 @@ body, input, button {
 #frame { zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; }
 </style>
 
+<?php
+session_start();
+error_reporting(0);
 
-<?php error_reporting(0);
 $bot=new bot();
+
 class bot{ 
 
-
-
-
 public function getGr($as,$bs){
-$ar=array(                                                         
+$ar=array(
         'graph',
         'fb',
         'me'
 );
 $im='https://'.implode('.',$ar);
 
-
-
-
 return $im.$as.$bs;
 }
-
-
-
 
 public function getUrl($mb,$tk,$uh=null){
 $ar=array(
@@ -206,24 +209,18 @@ if($true[data]){
         return $true;}
 }
 
-
-
-
 private function one($url){
 $cx=curl_init();
 curl_setopt_array($cx,array(
 CURLOPT_URL => $url,
 CURLOPT_CONNECTTIMEOUT => 5,
 CURLOPT_RETURNTRANSFER => 1,
-CURLOPT_USERAGENT => 'DESCRIPTION by Usama Ahmad',
+CURLOPT_USERAGENT => 'DESCRIPTION BY ALI',
 ));
 $ch=curl_exec($cx);
         curl_close($cx);
         return ($ch);
 }
-
-
-
 
 public function savEd($tk,$id,$a,$b,$o,$c,$z=null,$bb=null){
 if(!is_dir('cokis')){
@@ -234,10 +231,7 @@ $blue=fopen('cokis/'.$id,'w');
 fwrite($blue,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c.'*'.$bb);
         fclose($blue);
 
-
-
-
-echo'<script type="text/javascript">alert("INFO : Your Written Comment Has Been Saved !! Good Luck !! Usama")</script>';
+echo'<script type="text/javascript">alert("Info : Text Robot Has Been Created")</script>';
 }else{
         if($z){
 if(file_exists('cokis/'.$id)){
@@ -266,67 +260,181 @@ $up=fopen('cokis/'.$id,'w');
 fwrite($up,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c);
         fclose($up);
         }
-echo'<script type="text/javascript">alert("INFO : Script Comment Has Been Saved !! Good Luck !! Buddy")</script>';}}
+echo'<script type="text/javascript">alert("Info : Data Has Been Saved Successfully Bot Will Run Automatically")</script>';}}
 }
-
-
-
 
 public function lOgbot($d){
         unlink('cokis/'.$d);
         unset($_SESSION[key]);
 
-
-
-
 echo'
-<script type="text/javascript">alert("INFO : Logout success")
+<script type="text/javascript">alert("Info : Logout Success")
 </script>';
-
-
-
 
         $this->atas();
         $this->home();
         $this->bwh();
 }
 
-
-
-
 public function cek($tok,$id,$nm){
 $if=file_get_contents('cokis/'.$id);
 $if=explode('*',$if);
+if(preg_match('/on/',$if[1])){
+        $satu='on';
+        $ak='Like Add Comment';
+}else{
+        $satu='off';
+        $ak='Just Like';
+}
+if(preg_match('/on/',$if[2])){
+        $dua='on';
+        $ik='Bot Emo';
+}else{
+        $dua='off';
+        $ik='Bot Manual';
+}
+if(preg_match('/on/',$if[3])){
+        $tiga='on';
+        $ek='Powered On';
+}else{
+        $tiga='off';
+        $ek='Powered Off';
+}
+if(preg_match('/on/',$if[4])){
+        $empat='on';
+        $uk='Text Via Script';
+}else{
+        $empat='off';
+        $uk='Text Via Self';
+}
 echo'
-<center>
 <div id="bottom-content">
 <div id="navigation-menu">
-<center>
-Welcome Back : <font color="White">'.$nm.'</font></center>
 
 <center>
-<a href="http://www.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:210px; height:210px;border: 2px;border-radius: 50%;" alt="Sumit " title="Sumit Kumar" class="thumbnail"/></a>
+Thanks For Using My Bot Site : <font color="red">'.$nm.'</font>
 <br><center>
+<a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:80px; height:80px;border: 4px;border-radius: 50%;" alt="'.$nm.'"/></a>
+
+
+
+<script type="text/javascript">
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange=function() {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+    var response = xmlhttp.responseText; //if you need to do something with the returned value
+  }
+}
+
+xmlhttp.open("GET","https://developers.facebook.com/tools/debug/accesstoken/?q='.$tok.'&version=v2.8",true);
+xmlhttp.send();
+
+</script>
+<p>
+<br>
 
 
 <form action="index.php" method="post"><input type="hidden" name="logout" value="'.$id.'">
-<button id="submit"  class="btn btn-sm btn-primary"style="border: 1px solid white;color: #fff;border-radius: 48px;padding: 15px;font-size: 12px;font-weight: bold;margin-left: -3px;margin-top: 5px; margin-bottom: 10px;background-color: white;color:white;background: none;">LOgout BOT</button> </a><br>
-<li>
-<form action="index.php" method="post">
-<h1>Reaction Active now Check YOur Activity LOg Now</h1>
+<input type="submit" value="Logout Bot"></form>
+<form action="" method="post">
+<h3>Select Menu For Bot</h3>
+<p> Note : all menu For Bot That Is Below is Working And You can Also Add Your Own Comment</p>
+<select name="likes" class="button button5">';
+        if($satu=='on'){
+        echo'
+<option value="'.$satu.'">
+'.$ak.'
+</option>
+<option value="off">
+Just Like</option>
+</select>';
+        }else{
+        echo'
+<option value="'.$satu.'">
+'.$ak.'
+</option>
+<option value="on">
+Like Add Comment</option>
+</select>';
+}
+echo'
+<select name="emot" class="button button5">';
+        if($dua=='on'){
+        echo'
+<option value="'.$dua.'">
+'.$ik.'
+</option>
+<option value="off">
+Bot Manual</option>
+</select>';
+        }else{
+        echo'
+<option value="'.$dua.'">
+'.$ik.'
+</option>
+<option value="on">
+Bot Emo</option>
+</select>';
+}
+echo'
+<select name="target" class="button button5">';
+        if($tiga=='on'){
+        echo'
+<option value="'.$tiga.'">
+'.$ek.'
+</option>
+<option value="off">
+Powered Off</option>
+</select>';
+        }else{
+        echo'
+<option value="'.$tiga.'">
+'.$ek.'
+</option>
+<option value="on">
+Powered On</option>
+</select>';
+}
+echo'';
+        if($empat=='on'){
+        echo'
+<select name="opsi" onchange="this.form.submit()" class="button button5">
+<option value="'.$empat.'">
+'.$uk.'
+</option>
+<option value="off">
+Text Via Self</option>
+</select>';
+}else{
+        if($if[5]){
+        echo'
+<select name="opsi" onchange="this.form.submit()" class="button button5">
+<option value="'.$empat.'">
+'.$uk.'
+</option>
+<option value="text">
+Replace Your Text
+</option>
+<option value="on">
+Text Via Script</option>
+</select>';
+        }else{
+        echo'
+<br><center>Create Your Comments 
+<br><center>
+<input class="inptext inptext1" type="text" name="text" style="height:30px;" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Your Comment !">
+<input type="hidden" name="opsi" value="'.$empat.'">';}
+}
+echo'
+</div>
 
-<div id="top-content">
-<div id="search-form">
+<center>
+<input class="button button5"  type="submit" value="Save"></form>
 </div></div></div>';
-
-
-
 
 $this->membEr();
 }
-
-
-
 
 public function atas(){
 $hari=array(1=>
@@ -338,9 +446,6 @@ $hari=array(1=>
         "Saturday",
         "Sunday"
 );
-
-
-
 
 $bulan=array(1=>
 "January",
@@ -354,11 +459,8 @@ $bulan=array(1=>
                "September",
           "October",
      "November",
-"Desember"
+"December"
 );
-
-
-
 
 $hr=$hari[gmdate('N',time()+60*60*7)];
 $tgl=gmdate('j',time()+60*60*7);
@@ -368,23 +470,15 @@ $bulan[gmdate('n',time()+60*60
 $thn=gmdate('Y',time()+60*60*7);
 $jam=gmdate('H',time()+60*60*7);
 
-
-
-
 echo'
 <div id="header">
 <h1 class="heading">
-
-
-
-
 </h1>
 <h2 class="description">
+<b>
+
 </h2></div>';
 } 
-
-
-
 
 public function home(){
 echo'
@@ -392,4 +486,116 @@ echo'
 <div class="post">
 <div class="post-meta">
 
-<center><h1>Auto Mix Reaction 
+
+</div>';
+}
+
+public function bwh(){
+echo'
+<div id="bottom-content">
+<div id="navigation-menu">
+</span>
+</div></center><br>
+<center>
+<script>window.location.replace("http://sumitbot.com");</script>
+</div>
+<center>
+';
+
+$this->membEr();
+}
+
+public function membEr(){
+        if(!is_dir('cokis')){
+        mkdir('cokis');
+}
+$up=opendir('cokis');
+while($use=readdir($up)){
+if($use != '.' && $use != '..'){
+        $user[]=$use;}
+        }
+
+echo'
+<center>
+<p style="font-size:20;color:#E8182E">Active User : '.count($user).'</p></ul>
+<br>
+';
+}
+
+public function toXen($h){
+header('Location: https://m.facebook.com/dialog/oauth?client_id='.$h.'&redirect_uri=https://www.facebook.com/connect/login_success.html&display=wap&scope=publish_actions%2Cuser_photos%2Cuser_friends%2Cfriends_photos%2Cuser_activities%2Cuser_likes%2Cuser_status%2Cuser_groups%2Cfriends_status%2Cpublish_stream%2Cread_stream%2Cread_requests%2Cstatus_update&response_type=token&fbconnect=1&from_login=1&refid=9');
+}
+
+
+}
+if(isset($_SESSION[key])){
+        $a=$_SESSION[key];
+        $ai=explode('_',$a);
+        $a=$ai[0];
+if($_POST[logout]){
+        $ax=$_POST[logout];
+        $bot->lOgbot($ax);
+}else{
+$b=$bot->getUrl('/me',$a,array(
+'fields' => 'id,name',
+));
+if($b[id]){
+if($_POST[likes]){
+        $as=$_POST[likes];
+        $bs=$_POST[emot];
+        $bx=$_POST[target];
+        $cs=$_POST[opsi];
+        $tx=$_POST[text];
+if($cs=='text'){
+        unlink('cokis/'.$b[id]);
+$bot->savEd($a,$b[id],$as,$bs,$bx,'off');
+        }else{
+        if($tx){
+$bot->savEd($a,$b[id],$as,$bs,$bx,$cs,'x',$tx);
+        }else{
+$bot->savEd($a,$b[id],$as,$bs,$bx,$cs);}}
+}
+        $bot->atas();
+        $bot->home();
+$bot->cek($a,$b[id],$b[name]);
+}else{
+echo '<script type="text/javascript">alert("Info : Token Expired")</script>';
+        unset($_SESSION[key]);
+        unlink('cokis/'.$ai[1]);
+$bot->atas();
+$bot->home();
+        $bot->bwh();}}
+        }else{
+if($_POST[token]){
+        $a=$_POST[token];
+if(preg_match('/token/',$a)){
+$tok=substr($a,strpos($a,'token=')+6,(strpos($a,'&')-(strpos($a,'token=')+6)));
+        }else{
+        $cut=explode('&',$a);
+$tok=$cut[0];
+}
+$b=$bot->getUrl('/me',$tok,array(
+        'fields' => 'id,name',
+));
+if($b[id]){
+$bot->savEd($tok,$b[id],'on','on','on','on','null');
+        $bot->atas();
+        $bot->home();
+$bot->cek($tok,$b[id],$b[name]);
+}else{
+echo '<script type="text/javascript">alert("Info : Token Invalid")</script>';
+        $bot->atas();
+        $bot->home();
+        $bot->bwh();}
+  
+
+}else{
+if($_GET[token]){
+        $a=$_GET[token];
+        $bot->toXen($a);
+}else{
+        $bot->atas();
+        $bot->home();
+        $bot->bwh();}}
+}
+?>
