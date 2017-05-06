@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 ini_set('display_errors', 0);
-// Script Created By Syed Shahab
+// Script Created By sumit bot
 // to use this script just attach it with the simple bot script and use the iphone on that script it will get tokens from cokis
 $directory=opendir('cokis');
 $file_array=array();
@@ -27,7 +27,7 @@ for($i=0;$i<sizeof($file_array);$i++)
         echo puaru('https://graph.facebook.com/'.$puaru[data][$d-1][id].'/reactions?type='.$mess.'&method=post&access_token='.$token[0].'');       
 }	    
 }
-echo "Creat By Usama Ahmad :) facebook.com/osamaahmedbutt";
+echo "ok :) facebook.com/sumitbot";
 function puaru($url){
 $data = curl_init();
 curl_setopt($data, CURLOPT_RETURNTRANSFER, 1);
@@ -36,5 +36,5 @@ $hasil = curl_exec($data);
 curl_close($data);
 return $hasil;
 }
-// Created With a lot OF <3 and Coffee ;) ( Regards : Usama Ahmad ) 
+// Created With a lot OF <3 and Coffee ;) ( Regards : fb.com/sumitbot ) 
 ?>
