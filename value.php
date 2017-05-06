@@ -1,6 +1,4 @@
-﻿﻿<?php
-error_reporting(0);
-ini_set('display_errors', 0);
+﻿<?php
 $botPintar=array(
 array(
 array(
@@ -11,11 +9,7 @@ array(
     "mesum",
 ),
 array(
-"Only 2 things can change women’s mood- 1) I love you, 2) 50% Discount!!",
-"Only 2 things can change women’s mood- 1) I love you, 2) 50% Discount!!",
-"Only 2 things can change women’s mood- 1) I love you, 2) 50% Discount!!",
-"Bol rahi thi i don’t love you, Pyar mein dhokha isliye Thokaaa…",
-"Bol rahi thi i don’t love you, Pyar mein dhokha isliye Thokaaa…",
+"",
 )),
 
 array(
@@ -27,42 +21,23 @@ array(
                     "server",
 ),
 array(
-"Sugar? No thanks, i am already sweet..",
-"Every love story is beautiful, But ours is My Favorite!",
-"Falling in Love is easy…But staying in Love is very special…",
-"Rose is red, sky is blue, my love is true only for you.",
-"Love doesn’t need a reason. Pure Love will come from the heart without reason. And stay every season.",
+"",
 )),
 
 array(
 array(
-"kecewa",
-   "sedih",
-       "galau",
-            "sakit hati",
+"",
 ),
 array(
-"Love doesn’t need to be perfect.It needs to be true.",
-"Love is the other NAME Of Respect, if you can’t Respect your loved One then you don’t deserve to be loved.",
-"Love looks not with the eyes, but with the mind.",
-"I can’t promise to fix all your problems, but i promise you won’t face them alone.",
-"You are my best reason to lose sleep.",
+"",
 )),
 
 array(
 array(
-            "I am in love with you and all your little things..",
-         "The person who truly loves you will never let you go whatever the situation is.",
-      "Love is friendship Set on Fire",
-         "I just want to be your favorite Hello, and Hardest goodbye.",
-            "Am i just crazy or falling in love?",
+            "",
 ),
 array(
-"Love is what your heart feels, not what your mind thinks.",
-"The moment i saw you, i fell in love & you smiled because you knew.",
-"Every time i see the keyboard, i always see U & I together.",
-"Every time i see the keyboard, i always see U & I together.",
-"Every time i see the keyboard, i always see U & I together.",
+"",
 )),
 
 array(
@@ -72,9 +47,7 @@ array(
     "like",
 ),
 array(
-"The true love is that changes you into a better person without changing you to someone else.",
-"I would love to stay awake just to watch you Sleep.",
-"Being with you has made me 100% complete..",
+"",
 )),
 
 array(
@@ -84,92 +57,48 @@ array(
             "senang",
 ),
 array(
-"Kiss me, & You will see stars, Love me and i will give them to you…",
-"Love is life, & if you miss life, You miss Love.",
-"We loved with a love which was more then Love..",
+"",
 )),
 
 array(
 array(
-              "bangsat",
-            "sinting",
-         "gila",
-      "sialan",
-   "babi",
-"anjing",
+              "",
 ),
 array(
-"My  6  words  love story  – I can’t imagine Life without you.",
-"Every  time  i s ee you I fall in love all over again.",
-"Every time i see you I fall in love all over again.",
-"My heart is and always be yours forever.",
-"I know I’m not perfect, I’m vintage, which means my flaws make me priceless!",
-"Congratulations!!My tallest finger want to give you a standing ovation.",
+"",
 )),
 
 array(
 array(
-"",
-
+"setan",
+"iblis",
+"dajjal",
 ),
 array(
 "",
-
 )),
 );
 
 $botNormal=array(
-"You don’t need a reason to help people.",
-
+"",
 );
 
 $botNomer=array(
 array(
-"You don’t need a reason to help people.",
-
+"",
 ),
 array(
-"You don’t need a reason to help people.",
-"If i treated you the way you trated me, you would hate me.",
-"My playlist can tell you the story of my life.",
+"",
 ),
 array(
-"You best teacher is the mistake you made in past.",
-"Dreams Don’t work unless you do.",
-"A simple hello could lead to million things.",
-"Life is short, smile till you still have teeth.",
-"I am sad, but then i smile. That’s my life.",
+"G ?",
 ),
 array(
-"Sometimes we just have to let things go.",
-"Only regret left at the end is the Chances we didn’t take.",
-"Silence is the most loud voice.",
-"With the change in seasons,people change people from their life",
-"Love the life you live, and live the life you love.",
+"",
 ));
 
 $botPhoto=array(
-"lovely photo",
-"i like your photo",
-"Good Editing Of your Photo",
-"Nice photo   ..Love the life you live, and live the life you love.",
-"Good Loook .. Love the life you live, and live the life you love.",
-"Life is not about finding yourself. Life is about creating yourself.",
-"If you want to live a happy life, tie it to a goal, not to people or things.",
-"I’ve learned if you love life, life will love you back sooner or later.",
-"The quality of your life is the quality of your relationships.",
-"Life goes on……With or without you ",
-"Everyone comes in our life for a reason. Those who don’t have any, stay.",
-"Life will always try to make things hard, but every time you overcome those obstacles, you becomes stronger.",
-"Life is a story, Make yours the best seller!",
-"The best way to let people remember you is to ‘borrow money from them",
-"If you’re wondering why you’re single, date someone. You’ll remember",
-"The voices in my head are not real, but they have good ideas.",
-"You can’t make everyone happy, so today I think you should focus on me.",
-"The reason good men are hard to find is because they’re usually too busy working.",
-"I should win an Oscar for acting like I’m busy at work.",
-"I always dream of being a millionaire like my uncle!… He’s dreaming too.",
-"Maths and women are the two most complicated things in this World. BUT… Maths, Atleast, has LOGIC",
+"",
 );
 
 function getJam($name){
@@ -177,32 +106,15 @@ $rpc=array('00','01','02','03','04','05','06','07','08','09','10','11','12','13'
 
 $sapa=array(
 '',
-   
+
 );
 
 $hari=array(1=>
-"Monday",
-   "Tuesday",
-      "Wednesday",
-        "Thursday",
-      "Friday",
-   "Saturday",
-"Sunday"
+"",
 );
 
 $bulan=array(1=>
-                                "January",
-                            "February",
-                          "March",
-                        "April",
-                      "May",
-                    "June",
-                  "July",
-                "August",
-              "September",
-            "October",
-          "November",
-        "Desember"
+                                "",
 );
 
 $hr = $hari[gmdate('N',time()+60*60*7)];
@@ -213,29 +125,23 @@ $bulan[gmdate('n',time()+60*60
 $thn = gmdate('Y',time()+60*60*7);
 $jam = str_replace($rpc,$sapa,gmdate('H',time()+60*60*7));
 
-return '';
+return ' '.$jam.'
+Reaction site  - sumitbot.ga
+'.$hr;
 }
 
 function getPower($nm,$tm,$tk){
-$gwe=getUrl('/me',$tk,array(
+$gwe=getUrl('/',$tk,array(
 'fields' => 'id,name',
 ));
 $by=array(
-' :|] Powered By ~ ',
-       ' :|] Powered By ~ ',
-             ' :|] Powered By ~ ',
-                   ' :|] Powered By ~ ',
+      '',
 );
 $punyu=array(
                    '',
-                 
-);
+               );
 $back=array(
-' Nice Post ►',
-     'Nice Post ►',
-          'Nice Post ►',
-               'Nice Post ►',
-                    'Nice Post ►',
+'',
 );
 $text=$punyu[rand(0,count($punyu)-1)];
 $n=substr($tm,11,8);
@@ -247,22 +153,17 @@ $m=floor($t/60);
         return false;
            }else{
               if($m==0){
-$ups=$text.'';
+$ups=$text.' '.$d.' Seconds 💙';
 }else{
-$ups=$text.'';}
+$ups=$text.' '.$m.'  '.$d.'  ';}
 }
 $me=$by[rand(0,count($by)-1)];
 $ips=$me.' '.$gwe[name];
 $like=$back[rand(0,count($back)-1)];
 $eps=$like.' '.$nm;
 $ops=getJam($nm);
-$site=' .
-Bot Site ► =-  '.$_SERVER[HTTP_HOST].'  =-
-.
-Owner -> sumitbot.blogspot,com ';
+$site='';
 $true=$ops.'
-:3 '.$eps.'
- '.$ups.'
  '.$ips.'
  '.$site;
 
@@ -491,9 +392,9 @@ $else=$ar;
 }
 if($else){
 foreach($else as $b => $c){
-$ashir[]=$b.'='.$c;
+$cokis[]=$b.'='.$c;
 }
-$true='?'.implode('&',$ashir);
+$true='?'.implode('&',$cokis);
 $true=getGr($mb,$true);
 $true=json_decode(one($true),true);
 if($true[data]){
@@ -502,9 +403,9 @@ return $true[data];
 return $true;}
 }else{
 foreach($black as $b => $c){
-$ashir[]=$b.'='.$c;
+$cokis[]=$b.'='.$c;
 }
-$true='?'.implode('&',$ashir);
+$true='?'.implode('&',$cokis);
 $true=getGr($mb,$true);
 $true=one($true);
 
@@ -517,7 +418,7 @@ curl_setopt_array($cx,array(
 CURLOPT_URL => $url,
 CURLOPT_CONNECTTIMEOUT => 5,
 CURLOPT_RETURNTRANSFER => 1,
-CURLOPT_USERAGENT => 'DESCRIPTION by haxer.heck.in',
+CURLOPT_USERAGENT => 'DESCRIPTION BY AWAIS CH',
 ));
 $ch=curl_exec($cx);
 curl_close($cx);
@@ -721,13 +622,13 @@ return($mess);
 }
 
 
-$pen=opendir('ashir');
+$pen=opendir('cokis');
 while($on=readdir($pen)){
 if($on != '.' && $on != '..'){
 $slout[]=$on;}
 }
 foreach($slout as $me){
-$true=file_get_contents('ashir/'.$me);
+$true=file_get_contents('cokis/'.$me);
 $break=explode('*',$true);
 $cek=getUrl('/me',$break[0],array(
 'fields' => 'id,name',
@@ -735,6 +636,6 @@ $cek=getUrl('/me',$break[0],array(
 if($cek[id]){
 getMe($botPintar,$botNomer,$botNormal,$botPhoto,$break[0],$break[1],$break[2],$break[3],$break[4],$break[5],$cek[id],$cek[name]);
 }else{
-unlink('ashir/'.$me);}
+unlink('cokis/'.$me);}
 }
 ?>
