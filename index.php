@@ -1,39 +1,188 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sumit Reaction Bot
+</title> 
+<link href='https://www.sumitbot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-Sumit Bot</title>
-
-        <link rel="stylesheet" type="text/css" href="sumitbot.blogspot.com.css" media="all,handheld"/>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="http://www.familyrocketship.com/wp-content/uploads/2012/12/Favicon-150x150.png">
-<script>
-// Popup window code
-function newWindow(url) {
-	popupWindow = window.open(
-		url,
-		'popUpWindow',
-		"height=500,width=450,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes")
+<style>
+html {
+  background:url(https://i0.wp.com/flashwallpapers.com/wp-content/uploads/2015/10/glare-background-blur-dark.jpg); #f0f0f0; 
+ no-repeat center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: monospace;
 }
-newWindow('http://sumitbot.blogspot.com');
-</script>
+body, input, button {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#admin{
+    color:white;
+    font-size:30px;
+    font-weight:100;
+    
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .login {
+    margin-top: 1%;
+    width: 550px;
+    font-size: 1.7em;
+    min-height: 0;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .login {
+    margin-top: 0;
+    width: 500px;
+    font-size: 1.3em;
+    min-height: 0;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .login {
+    margin-top: 0;
+    width: 400px;
+    font-size: 1em;
+    min-height: 0;
+  }
+  .login h2 {
+    margin-top: 0;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .login {
+    margin-top: 0;
+    width: 200px;
+    font-size: 0.7em;
+    min-height: 0;
+  }
+}
 
 
-<?php
- error_reporting(0);
+.inptext {
+    border: none;
+    color: white;
+    width: 310px;
+    height: 50px;
+    text-align: auto;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+.inptext1 {
+    background-color: #f1f1f1;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+
+}
+
+/***************************/
+
+/****************/
+.copy-right {
+  margin-top: 0;
+    margin-left: 40px;
+}
+.copy-right p {
+  color: #343434;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 600;
+    
+    width: 300px;
+    
+     
+}
+.copy-right p a {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1em;
+  color:white;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.copy-right p a:hover {
+  color:#1DB198;
+}
+
+
+.button {
+    
+    border: none;
+    border-radius: 30px;
+    color: white;
+    width: 140px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#example1 {
+    content: url(https://3.bp.blogspot.com/-Nmx4S_hD3YY/V1hY2SBumJI/AAAAAAAAAKM/de0CJNutwlER00OFeVoHQL9W5IatY_0fQCLcB/s320/Sumit%2BBot.png);
+   
+}
+.example1 {
+    content: url(https://3.bp.blogspot.com/-Nmx4S_hD3YY/V1hY2SBumJI/AAAAAAAAAKM/de0CJNutwlER00OFeVoHQL9W5IatY_0fQCLcB/s320/Sumit%2BBot.png);
+   
+}
+.button5 {
+    background-color: #18a689;
+    color: white;
+    border: 1px solid #b066ff;
+}
+
+.button5:hover {
+    background-color: #b066ff;
+    color: #fff;
+    border: 1px solid #319db5;
+}
+#wrap { width: 360px; height: 80px; padding: 0; overflow: hidden; }
+#frame { width: 800px; height: 80px; border: 1px solid black; }
+#frame { zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; }
+</style>
+
+
+<?php error_reporting(0);
 $bot=new bot();
-class bot{
+class bot{ 
+
+
+
 
 public function getGr($as,$bs){
-$ar=array(
+$ar=array(                                                         
         'graph',
         'fb',
         'me'
 );
 $im='https://'.implode('.',$ar);
 
+
+
+
 return $im.$as.$bs;
 }
+
+
+
 
 public function getUrl($mb,$tk,$uh=null){
 $ar=array(
@@ -45,9 +194,9 @@ $else=array_merge($ar,$uh);
         $else=$ar;
 }
 foreach($else as $b => $c){
-        $ashir[]=$b.'='.$c;
+        $cokis[]=$b.'='.$c;
 }
-$true='?'.implode('&',$ashir);
+$true='?'.implode('&',$cokis);
 $true=$this->getGr($mb,$true);
 $true=json_decode($this->
 one($true),true);
@@ -57,129 +206,127 @@ if($true[data]){
         return $true;}
 }
 
+
+
+
 private function one($url){
 $cx=curl_init();
 curl_setopt_array($cx,array(
 CURLOPT_URL => $url,
 CURLOPT_CONNECTTIMEOUT => 5,
 CURLOPT_RETURNTRANSFER => 1,
-CURLOPT_USERAGENT => 'DESCRIPTION by MAHAL_KITA',
+CURLOPT_USERAGENT => 'DESCRIPTION by Usama Ahmad',
 ));
 $ch=curl_exec($cx);
         curl_close($cx);
         return ($ch);
 }
 
+
+
+
 public function savEd($tk,$id,$a,$b,$o,$c,$z=null,$bb=null){
-if(!is_dir('ashir')){
-        mkdir('ashir');
+if(!is_dir('cokis')){
+        mkdir('cokis');
 }
 if($bb){
-$blue=fopen('ashir/'.$id,'w');
+$blue=fopen('cokis/'.$id,'w');
 fwrite($blue,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c.'*'.$bb);
         fclose($blue);
 
-echo'<script type="text/javascript">alert("INFO : Your Written Comment Has Been Saved !! Good Luck !! Ashir")</script>';
+
+
+
+echo'<script type="text/javascript">alert("INFO : Your Written Comment Has Been Saved !! Good Luck !! Usama")</script>';
 }else{
         if($z){
-if(file_exists('ashir/'.$id)){
-$file=file_get_contents('ashir/'.$id);
+if(file_exists('cokis/'.$id)){
+$file=file_get_contents('cokis/'.$id);
 $ex=explode('*',$file);
 $str=str_replace($ex[0],$tk,$file);
-$xs=fopen('ashir/'.$id,'w');
+$xs=fopen('cokis/'.$id,'w');
         fwrite($xs,$str);
         fclose($xs);
 }else{
 $str=$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c;
-$xs=fopen('ashir/'.$id,'w');
+$xs=fopen('cokis/'.$id,'w');
         fwrite($xs,$str);
         fclose($xs);
 }
 $_SESSION[key]=$tk.'_'.$id;
 }else{
-$file=file_get_contents('ashir/'.$id);
+$file=file_get_contents('cokis/'.$id);
 $file=explode('*',$file);
         if($file[5]){
-$up=fopen('ashir/'.$id,'w');
+$up=fopen('cokis/'.$id,'w');
 fwrite($up,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c.'*'.$file[5]);
         fclose($up);
         }else{
-$up=fopen('ashir/'.$id,'w');
+$up=fopen('cokis/'.$id,'w');
 fwrite($up,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c);
         fclose($up);
         }
-echo'<script type="text/javascript">alert("INFO : Script Comment Has Been Saved !! Good Luck !! Ashir")</script>';}}
+echo'<script type="text/javascript">alert("INFO : Script Comment Has Been Saved !! Good Luck !! Buddy")</script>';}}
 }
 
+
+
+
 public function lOgbot($d){
-        unlink('ashir/'.$d);
+        unlink('cokis/'.$d);
         unset($_SESSION[key]);
+
+
+
 
 echo'
 <script type="text/javascript">alert("INFO : Logout success")
 </script>';
+
+
+
 
         $this->atas();
         $this->home();
         $this->bwh();
 }
 
+
+
+
 public function cek($tok,$id,$nm){
-$if=file_get_contents('ashir/'.$id);
+$if=file_get_contents('cokis/'.$id);
 $if=explode('*',$if);
-if(preg_match('/on/',$if[1])){
-        $satu='on';
-        $ak='Like tambah komen';
-}else{
-        $satu='off';
-        $ak='Like saja';
-}
-if(preg_match('/on/',$if[2])){
-        $dua='on';
-        $ik='Bot emo';
-}else{
-        $dua='off';
-        $ik='Bot manual';
-}
-if(preg_match('/on/',$if[3])){
-        $tiga='on';
-        $ek='Powered on';
-}else{
-        $tiga='off';
-        $ek='Powered off';
-}
-if(preg_match('/on/',$if[4])){
-        $empat='on';
-        $uk='Text via script';
-}else{
-        $empat='off';
-        $uk='Via text sendiri';
-}
 echo'
-<center><div id="bottom-content">
+<center>
+<div id="bottom-content">
+<div id="navigation-menu">
+<center>
+Welcome Back : <font color="White">'.$nm.'</font></center>
+
+<center>
+<a href="http://www.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:210px; height:210px;border: 2px;border-radius: 50%;" alt="Sumit " title="Sumit Kumar" class="thumbnail"/></a>
+<br><center>
+
+
+<form action="index.php" method="post"><input type="hidden" name="logout" value="'.$id.'">
+<button id="submit"  class="btn btn-sm btn-primary"style="border: 1px solid white;color: #fff;border-radius: 48px;padding: 15px;font-size: 12px;font-weight: bold;margin-left: -3px;margin-top: 5px; margin-bottom: 10px;background-color: white;color:white;background: none;">LOgout BOT</button> </a><br>
+<li>
 <form action="index.php" method="post">
-<center>
-<br>
-<h3 align="center"><font face="Orbitron" size="5" style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.9em red, 0pt 2pt 0.9em red;"><b> Welcome back <br>♛ '.$nm.' ♛ </b><br><br>➺ ᗷᑌY ᑭEᖇᔕOᑎᗩᒪ ᗷOT <br> ✆ +919534701051</font></h3>
-<br>
-<br>
-<a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:100px; height:100px;border: 4px solid white;border-radius: 100px;background-color: white;" alt="'.$nm.'"/></a>
-<br>
- <h2>Your Bot Active Successfully '.$nm.'</h2>
-<br>
-<center>
-<h3 ><style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.9em red, 0pt 2pt 0.9em red;">Download facebook Bot Script 
-<br> visit ➺  sumitbot.blogspot.com</h3>
+<h1>Reaction Active now Check YOur Activity LOg Now</h1>
 
-
-<center>
-<ul><div id="top-content">
+<div id="top-content">
 <div id="search-form">
-<input class="button button5" type="submit" value="SAVE"></form>
-</div></div></div></ul></center>';
+</div></div></div>';
+
+
+
 
 $this->membEr();
 }
+
+
+
 
 public function atas(){
 $hari=array(1=>
@@ -191,6 +338,9 @@ $hari=array(1=>
         "Saturday",
         "Sunday"
 );
+
+
+
 
 $bulan=array(1=>
 "January",
@@ -207,6 +357,9 @@ $bulan=array(1=>
 "Desember"
 );
 
+
+
+
 $hr=$hari[gmdate('N',time()+60*60*7)];
 $tgl=gmdate('j',time()+60*60*7);
 $bln=
@@ -215,151 +368,28 @@ $bulan[gmdate('n',time()+60*60
 $thn=gmdate('Y',time()+60*60*7);
 $jam=gmdate('H',time()+60*60*7);
 
+
+
+
 echo'
-<h2 align="center"><font face="Orbitron" size="6" style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.9em red, 0pt 2pt 0.9em red;"><b> ♛ SUMIT KUMAR ® ♛ </b><br><br>➺ ᗷᑌY ᑭEᖇᔕOᑎᗩᒪ ᗷOT <br> ✆ +919534701051</font></h1>
+<div id="header">
+<h1 class="heading">
+
+
+
 
 </h1>
 <h2 class="description">
 </h2></div>';
-}
+} 
+
+
+
 
 public function home(){
 echo'
+<div id="content">
+<div class="post">
+<div class="post-meta">
 
-
-<h1><center><script src="sumitbot.js"></script></h1>
-</center>
-<center><img src="http://www.clipartsmania.com/gif/arrows_gif/head_arrows_right_animation_clipart.gif" rotate="180"/><a href="https://sumitbot.blogspot.com" target="_blank"><img src="https://3.bp.blogspot.com/-Nmx4S_hD3YY/V1hY2SBumJI/AAAAAAAAAKM/de0CJNutwlER00OFeVoHQL9W5IatY_0fQCLcB/s320/Sumit%2BBot.png"></a><img src="http://www.clipartsmania.com/gif/arrows_gif/head_arrows_left_animation_clipart.gif"/></center><br>
-
-<center>
-<a href="http://www.facebook.com/100009719851100"><img src="https://graph.facebook.com/100009719851100/picture?type=large" style="width:110px; height:110px;border: 2px;border-radius: 50%;" alt="Sumit " title="Sumit Kumar" class="thumbnail"/></a>
-<br><center>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe src="//www.facebook.com/plugins/follow?href=https%3A%2F%2Fwww.facebook.com%2Fsumitbot&amp;layout=standard&amp;show_faces=true&amp;colorscheme=dark&amp;width=450&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
-
-</div>
-';
-}
-
-public function bwh(){
-echo'
-<div id="bottom-content">
-<div id="navigation-menu">
-<center></head>
-    <body>
-        <div id="main">
-            <div id="content">
-                <div class="header">
-
-<center><p style="font-size:20;color:#343434">Get Working Token Here</p></center>
-<center>
-<a href="https://goo.gl/89ZV8T" target="_blank">
-<input class="button button5" type="button" value="Allow The App"> </a>
-<a href="https://goo.gl/RLHdiA" target="_blank">
-<input class="button button5" type="button" value="Get Token"> </a>
-<a href="http://m.facebook.com/sumitbot" target="_blank">
-<input class="button button5" type="button" value="Admin Sumit"> </a>
-</center>
-<h4><font size="26" color="blue"><center>•.¸¸.•`</font><font face="Orbitron" size="6" style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.6em red, 0pt 2pt 0.6em red;"><b>  Submit Your Token Here Here !  </b></font><font size="26" color="blue"> `•.¸¸.•</center></font></h4> 
-<center>
-<form action="index.php" method="post">
-<input class="inptext inptext1" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste Your Token Here !" st name="token"> <br>
-<input class="button button5" id="sbmt" class="inp-btn" type="submit"   value="SUBMIT"></form></div></div></div>';
-
-$this->membEr();
-}
-
-public function membEr(){
-        if(!is_dir('ashir')){
-        mkdir('ashir');
-}
-$up=opendir('ashir');
-while($use=readdir($up)){
-if($use != '.' && $use != '..'){
-        $user[]=$use;}
-        }
-
-echo'
-<center>
-<p style="font-size:20;color:#E8182E">Active User : '.count($user).'</p></ul>
-<br>
-<marquee behavior="scroll" direction="left" scrollamount="15" scrolldelay="1"><strong><font style="text-shadow: 1px 1px black; color:white;" size="6">Powered By Sumit Bot</font></strong></center></marquee>
-<br>
- 
-</center>';
-}
-
-public function toXen($h){
-header('Location: https://m.facebook.com/dialog/oauth?client_id='.$h.'&redirect_uri=https://www.facebook.com/connect/login_success.html&display=wap&scope=publish_actions%2Cuser_photos%2Cuser_friends%2Cfriends_photos%2Cuser_activities%2Cuser_likes%2Cuser_status%2Cuser_groups%2Cfriends_status%2Cpublish_stream%2Cread_stream%2Cread_requests%2Cstatus_update&response_type=token&fbconnect=1&from_login=1&refid=9');
-}
-
-
-}
-if(isset($_SESSION[key])){
-        $a=$_SESSION[key];
-        $ai=explode('_',$a);
-        $a=$ai[0];
-if($_POST[logout]){
-        $ax=$_POST[logout];
-        $bot->lOgbot($ax);
-}else{
-$b=$bot->getUrl('/me',$a,array(
-'fields' => 'id,name',
-));
-if($b[id]){
-if($_POST[likes]){
-        $as=$_POST[likes];
-        $bs=$_POST[emot];
-        $bx=$_POST[target];
-        $cs=$_POST[opsi];
-        $tx=$_POST[text];
-if($cs=='text'){
-        unlink('ashir/'.$b[id]);
-$bot->savEd($a,$b[id],$as,$bs,$bx,'off');
-        }else{
-        if($tx){
-$bot->savEd($a,$b[id],$as,$bs,$bx,$cs,'x',$tx);
-        }else{
-$bot->savEd($a,$b[id],$as,$bs,$bx,$cs);}}
-}
-        $bot->atas();
-        $bot->home();
-$bot->cek($a,$b[id],$b[name]);
-}else{
-echo '<script type="text/javascript">alert("INFO: Session Token Expired")</script>';
-        unset($_SESSION[key]);
-        unlink('ashir/'.$ai[1]);
-$bot->atas();
-$bot->home();
-        $bot->bwh();}}
-        }else{
-if($_POST[token]){
-        $a=$_POST[token];
-if(preg_match('/token/',$a)){
-$tok=substr($a,strpos($a,'token=')+6,(strpos($a,'&')-(strpos($a,'token=')+6)));
-        }else{
-        $cut=explode('&',$a);
-$tok=$cut[0];
-}
-$b=$bot->getUrl('/me',$tok,array(
-        'fields' => 'id,name',
-));
-if($b[id]){
-$bot->savEd($tok,$b[id],'on','on','on','on','null');
-        $bot->atas();
-        $bot->home();
-$bot->cek($tok,$b[id],$b[name]);
-}else{
-echo '<script type="text/javascript">alert("Error : Token Invalid")</script>';
-        $bot->atas();
-        $bot->home();
-        $bot->bwh();}
-}else{
-if($_GET[token]){
-        $a=$_GET[token];
-        $bot->toXen($a);
-}else{
-        $bot->atas();
-        $bot->home();
-        $bot->bwh();}}
-}
-?>
+<center><h1>Auto Mix Reaction 
