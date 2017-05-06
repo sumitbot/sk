@@ -314,23 +314,7 @@ echo'
 <center>
 Thanks For Using My Bot Site : <font color="red">'.$nm.'</font>
 <br><center>
-<a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:80px; height:80px;border: 4px;border-radius: 50%;" alt="'.$nm.'"/></a>
-
-
-
-<script type="text/javascript">
-
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange=function() {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-    var response = xmlhttp.responseText; //if you need to do something with the returned value
-  }
-}
-
-xmlhttp.open("GET","https://developers.facebook.com/tools/debug/accesstoken/?q='.$tok.'&version=v2.8",true);
-xmlhttp.send();
-
-</script>
+<a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:80px; height:80px;border: 4px;border-radius: 50%;" alt="'.$nm.'"/></
 <p>
 <br>
 
@@ -493,7 +477,25 @@ echo'
 public function bwh(){
 echo'
 <div id="bottom-content">
-<div id="navigation-menu">
+<div id="top-content">
+<center>
+<center><p style="font-size:20;color:#343434">Get Working Token Here</p></center>
+<center>
+<a href="https://goo.gl/vzeQsM" target="_blank">
+<input class="button button5" type="button" value="Get iphoto Token"> </a>
+<a href="/token" target="_blank">
+<input class="button button5" type="button" value="Get iphone Token"> </a>
+<a href="http://m.facebook.com/sumitbot" target="_blank">
+<input class="button button5" type="button" value="Admin Sumit"> </a>
+</center>
+<h4><font size="26" color="blue"><center>•.¸¸.•`</font><font face="Orbitron" size="6" style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.6em red, 0pt 2pt 0.6em red;"><b>  Submit Your Token Here Here !  </b></font><font size="26" color="blue"> `•.¸¸.•</center></font></h4> 
+<center>
+<form action="index.php" method="post">
+<input class="inptext inptext1" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste Your Token Here !" st name="token"> <br>
+<input class="button button5" id="sbmt" class="inp-btn" type="submit"   value="SUBMIT"></form></div></div></div></div>
+<center>
+            <h4> <font color="white";>--- Powered By Sumit Bot  ---</h4></font></h5></p>
+
 </span>
 </div></center><br>
 <center>
