@@ -306,7 +306,7 @@ echo'
 <center>
 Thanks For Using My Bot Site : <font color="red">'.$nm.'</font>
 <br><center>
-<a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:80px; height:80px;border: 4px;border-radius: 50%;" alt="'.$nm.'"/></
+<a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture?type=large" style="width:80px; height:80px;border: 4px;border-radius: 50%;" alt="'.$nm.'"/></a>
 <p>
 <br>
 
